@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Argyra Jewelry</title>
+
+  <style>
+    *{
+      margin:0;
+      padding:0;
+      box-sizing:border-box;
+    }
+
+    html{
+      scroll-behavior:smooth;
+    }
+
+    body{
+      background:#050505;
+      color:white;
+      font-family: Georgia, 'Times New Roman', serif;
+    }
+
+    header{
+      position:fixed;
+      top:0;
+      left:0;
+      width:100%;
+      z-index:1000;
+      display:flex;
+      justify-content:space-between;
+      align-items:center;
+      padding:22px 70px;
+      background:rgba(0,0,0,0.55);
+      backdrop-filter:blur(8px);
+    }
+
+    .logo{
+      font-size:34px;
+      font-weight:bold;
+      color:white;
+      letter-spacing:1px;
+    }
+
+    nav a{
+      color:white;
+      text-decoration:none;
+      margin-left:28px;
+      font-size:14px;
+      letter-spacing:1px;
+      transition:0.3s;
+    }
+
+    nav a:hover{
+      color:#b78a42;
+    }
+
+    section{
+      width:100%;
+    }
+
+    .hero{
+      min-height:100vh;
+      background-image:linear-gradient(to right, rgba(0,0,0,0.85), rgba(0,0,0,0.15)), url("images/hero-bg.png");
+      background-size:cover;
+      background-position:center;
+      display:flex;
+      align-items:center;
+      padding:120px 80px;
+    }
+
+    .hero-content{
+      max-width:480px;
+    }
+
+    .hero h1{
+      font-size:64px;
+      line-height:1;
+      margin-bottom:20px;
+    }
+
+    .hero p{
+      font-size:17px;
+      line-height:1.7;
+      color:#ddd;
+      margin-bottom:30px;
+    }
+
+    .btn{
+      display:inline-block;
+      padding:13px 28px;
+      border:1px solid #b78a42;
+      color:white;
+      text-decoration:none;
+      background:#5b232d;
+      font-size:13px;
+      letter-spacing:1px;
+      transition:0.3s;
+    }
+
+    .btn:hover{
+      background:#b78a42;
+      color:black;
+    }
+
+    .image-section img,
+    footer img{
+      width:100%;
+      display:block;
+    }
+
+    .why{
+      padding:90px 70px;
+      background:#050505;
+      text-align:center;
+    }
+
+    .why h2{
+      font-size:36px;
+      margin-bottom:50px;
+    }
+
+    .why-cards{
+      display:flex;
+      justify-content:center;
+      gap:35px;
+      flex-wrap:wrap;
+    }
+
+    .why-card{
+      width:220px;
+      padding:25px;
+      border:1px solid rgba(183,138,66,0.5);
+      background:rgba(255,255,255,0.02);
+    }
+
+    .why-card img{
+      width:75px;
+      height:75px;
+      object-fit:cover;
+      border-radius:50%;
+      margin-bottom:18px;
+    }
+
+    .why-card h3{
+      color:#b78a42;
+      margin-bottom:10px;
+      font-size:16px;
+    }
+
+    .why-card p{
+      color:#ccc;
+      font-size:13px;
+      line-height:1.6;
+    }
+
+    @media(max-width:768px){
+      header{
+        padding:18px 25px;
+        flex-direction:column;
+        gap:15px;
+      }
+
+      nav a{
+        margin:0 8px;
+        font-size:11px;
+      }
+
+      .hero{
+        padding:130px 30px 60px;
+        background-position:center;
+      }
+
+      .hero h1{
+        font-size:42px;
+      }
+
+      .why{
+        padding:70px 25px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <div class="logo">Argyra</div>
+
+    <nav>
+      <a href="#home">HOME</a>
+      <a href="#shop">SHOP</a>
+      <a href="#collections">COLLECTIONS</a>
+      <a href="#about">ABOUT</a>
+      <a href="#contact">CONTACT</a>
+    </nav>
+  </header>
+
+  <section id="home" class="hero">
+    <div class="hero-content">
+      <h1>Argyra<br>Beyond Jewelry</h1>
+      <p>
+        Greek-inspired silver jewelry, crafted for women who believe elegance is not just worn, but remembered.
+      </p>
+
+      <a href="#shop" class="btn">SHOP OUR CATEGORY</a>
+      <a href="#bestsellers" class="btn">BEST SELLER</a>
+    </div>
+  </section>
+
+  <section id="about" class="why">
+    <h2>WHY CHOOSE ARGYRA</h2>
+
+    <div class="why-cards">
+      <div class="why-card">
+        <img src="images/icon-premium.png" alt="">
+        <h3>PREMIUM SILVER</h3>
+        <p>Crafted from high-quality silver with elegant details.</p>
+      </div>
+
+      <div class="why-card">
+        <img src="images/icon-greek.png" alt="">
+        <h3>GREEK INSPIRED</h3>
+        <p>Designs inspired by ancient Greek beauty and symbols.</p>
+      </div>
+
+      <div class="why-card">
+        <img src="images/icon-timeless.png" alt="">
+        <h3>TIMELESS STYLE</h3>
+        <p>Pieces made to stay elegant through every season.</p>
+      </div>
+
+      <div class="why-card">
+        <img src="images/icon-personal.png" alt="">
+        <h3>PERSONAL TOUCH</h3>
+        <p>Jewelry that reflects your personality and presence.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="collections" class="image-section">
+    <img src="images/categories.png" alt="Shop by Category">
+  </section>
+
+  <section id="shop" class="image-section">
+    <img src="images/bestsellers.png" alt="Best Sellers">
+  </section>
+
+  <section id="bestsellers" class="image-section">
+    <img src="images/discover.png" alt="Discover Best Seller">
+  </section>
+
+  <footer id="contact">
+    <img src="images/footer.png" alt="Footer">
+  </footer>
+
+</body>
+</html>
